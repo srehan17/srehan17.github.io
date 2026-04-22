@@ -59,7 +59,7 @@ a {
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0.85rem 0;
 }
 
@@ -116,7 +116,7 @@ h1 {
   margin: 0.65rem 0 0.65rem;
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   line-height: 0.98;
-  letter-spacing: -0.055em;
+  letter-spacing: 0.002em;
 }
 
 .hero-role {
@@ -172,13 +172,6 @@ h1 {
   transform: translateY(-1px);
 }
 
-.hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
 .chip {
   padding: 0.48rem 0.72rem;
   border-radius: 999px;
@@ -192,27 +185,6 @@ h1 {
   padding: 1.2rem;
 }
 
-.mini-block {
-  padding: 0.95rem 1rem;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid var(--border);
-}
-
-.mini-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--subtle);
-  margin-bottom: 0.35rem;
-}
-
-.mini-value {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -224,35 +196,16 @@ h1 {
   padding: 1.2rem;
 }
 
-.section-spacing {
-  margin-bottom: 1rem;
-}
-
 .section h2 {
   margin: 0 0 0.8rem;
   font-size: 1.05rem;
   letter-spacing: -0.03em;
 }
 
-.about p,
 .contact p,
 .project-card p,
 .experience-item li {
   color: var(--muted);
-}
-
-.skills-groups {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.skills-group-label {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--subtle);
-  margin-bottom: 0.35rem;
 }
 
 .skills-wrap {
@@ -350,12 +303,6 @@ li + li {
   text-align: center;
   color: var(--subtle);
   font-size: 0.82rem;
-}
-
-.hero-sub {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-bottom: 0.8rem;
 }
 
 @media (max-width: 900px) {
