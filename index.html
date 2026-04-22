@@ -1,434 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Resume - SarahRehan</title>
-</head>
-<body>
-    <div class="container container-fluid">
-    <header id="header">
-        <h1 id="name">Sarah Rehan</h1>
-        <div class="contact-details">
-            <span id="location">
-                Waterloo, ON 
-            </span>
-            <span class="pipe-symbol">&nbsp|&nbsp</span>
-            <span id="email">
-                sarahahmad17@gmail.com
-            </span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarah Rehan | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <!-- <a href="#top" class="brand">Sarah Rehan</a> -->
+        <div class="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div class="contact-details">
-            <span id="linkedin">
-                <a href="https://www.linkedin.com/in/sarahrehan85" target="_blank">linkedin.com/in/sarahrehan85</a>
-            </span> 
-            <span class="pipe-symbol">&nbsp|&nbsp</span>
-            <span id="github">
-                <a href="https://github.com/srehan17" target="_blank">github.com/srehan17</a>
-            </span> 
+      </div>
+    </nav>
+
+    <main id="top" class="container">
+      <section class="hero">
+        <div class="panel hero-main">
+          <div class="eyebrow">Full-Stack Developer</div>
+          <h1>Sarah Rehan</h1>
+          <div class="hero-role"><span>React · React Native · Node.js</span><span>Waterloo, ON</span></div>
+          <p>
+            Building secure, scalable web and mobile applications with a focus on frontend architecture, API integrations, and reliable, user-centred experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:sarahahmad17@gmail.com">Email</a>
+            <a class="button button-secondary" href="https://github.com/srehan17" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://linkedin.com/in/sarahrehan85" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
         </div>
-    </header>
-    <hr>
-    <main>
-        <section>
-            <h2>
-                Objective
-            </h2>
-            <div>
-                Self-motivated Software Developer eager to work in a dynamic team to design, develop, test, deploy and maintain robust, scalable software solutions.
+
+        <aside class="panel hero-side section">
+          <h2>Skills</h2>
+          <div class="skills-wrap">
+            <span>TypeScript</span><span>JavaScript</span><span>C#</span><span>C++</span><span>React Native</span><span>React</span><span>HTML</span><span>CSS</span><span>Node.js</span><span>Express</span><span>ASP.NET MVC</span><span>MS SQL</span><span>PostgreSQL</span><span>MongoDB</span><span>REST APIs</span><span>Jest</span><span>Git</span><span>TestFlight</span><span>Firebase</span><span>GitHub Actions</span><span>Docker</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="experience" class="panel section" style="margin-bottom: 1rem;">
+        <h2>Experience</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-head">
+              <div>
+                <h3>Full Stack Software Developer</h3>
+                <div class="company">One37 Solutions, Inc · Canada</div>
+              </div>
+              <div class="date">Dec 2023 – Present</div>
             </div>
-        </section>
-        <hr>
-        <section>
-            <h2>
-                Key Skills
-            </h2>
             <ul>
-                <li>
-                    Experience in full-stack development (front-end, back-end, databases and APIs)
-                </li>
-                <li>
-                    Front-end skills: JavaScript | HTML | CSS | React | TypeScript | React Native | Bootstrap
-                </li>
-                <li>
-                    Back-end skills: Node.js Express | Go | Python | C# ASP.NET | Ruby on Rails  
-                </li>
-                <li>
-                    Experience working with MS SQL, PostgreSQL and MongoDB databases
-                </li>
-                <li>
-                    Experience in developing and consuming RESTful APIs
-                </li>
-                <li>
-                    Experience using Git version control and conducting code reviews
-                </li>
-                <li>
-                    Experience writing automated unit tests using Mocha, Chai and Jest
-                </li>
-                <li>
-                    Experience creating CI/CD workflows with GitHub Actions and Docker
-                </li>
-                <li>
-                    Computer Applications Development postgraduate education
-                </li>
-                <li>
-                    Team player with good communication and collaboration skills
-                </li>
-                <li>
-                    Strong analytical, problem solving and organizational skills
-                </li>
-                <li>
-                    Committed to self-development, eager to learn new technologies, tools and best practices
-                </li>
+              <li>Build cross-platform mobile functionality in React Native and TypeScript for digital identity workflows.</li>
+              <li>Develop scalable frontend interfaces and integrate APIs and SDKs to deliver secure, seamless user experiences.</li>
+              <li>Design reusable components and improve application reliability, performance, and maintainability.</li>
+              <li>Collaborate with globally distributed team using GitLab, ClickUp, and Microsoft Teams to support delivery.</li>              
+              <li>Developed web application in React and Node.js/Express to support authentication and credential workflows.</li>
+              <li>Manage release validation and deployment using TestFlight and Firebase App Distribution.</li>
+              <li>Leverage AI-assisted tools (ChatGPT, Claude) to accelerate development and improve debugging and code quality.</li>
             </ul>
-        </section>
-        <hr>
-        <section>
-            <h2>
-                Relevant Work Experience
-            </h2>
-            <div>
-                <div class="row">
-                    <h3>Full Stack Software Developer</h3>
-                    <div class="year">Dec 2023 - Present</div>
-                </div>
-                 <div class="company-name">
-                    One37 Solutions, Inc (Digital identity company), Canada
-                </div>
-                <ul>
-                    <li>
-                        Design, develop, test, deploy, and maintain web applications using React and Node.js.
-                    </li>
-                     <li>
-                        Build cross-platform mobile applications using React Native and TypeScript, ensuring seamless user experience on Android and iOS.
-                    </li>
-                    <li>
-                        Contribute to daily Scrum meetings, supporting Agile software development in 2-week sprints to improve task completion and team communication.
-                    </li>
-                    <li>
-                        Collaborate remotely in a distributed team, using GitLab for version control and ClickUp for project management, ensuring consistent, high-quality releases.
-                    </li>
-                    <li>
-                        Enhanced mobile app security by implementing tamper detection, jailbreak/root detection, and emulator/USB connection checks to safeguard app integrity and prevent unauthorized modifications.
-                    </li>
-                    <li>
-                        Create native modules for iOS and Android, bridging native code with JavaScript to extend functionality.
-                    </li>
-                </ul>
-            </div>     
-            <div>
-                <div class="row">
-                    <h3>Software Developer Intern</h3>
-                    <div class="year">2023</div>
-                </div>
-                <div class="company-name">
-                    Diaryz (Tech startup: vertical social network for unpaid caregivers), Canada
-                </div>
-                <ul>
-                    <li>
-                        Building front-end components for mobile application using React Native, TypeScript, JavaScript and CSS transforming Figma designs into code
-                    </li>
-                    <li>
-                        Designing and developing REST API endpoints and handler functions in Go using Gin framework and Gorm and creating models to represent tables in PostgreSQL database
-                    </li>
-                    <li>
-                        Creating reusable components and libraries to keep code clean, scalable and maintainable
-                    </li>
-                    <li>
-                       Work collaboratively on codebase using GitHub version control and conduct code reviews 
-                    </li>
-                    <li>
-                        Debug and resolve issues through analysis and problem solving
-                    </li>
-                    <li>
-                        Participate in discussions with cross-functional team about design reviews, development best practices and ways to enhance user experience
-                    </li>
-                </ul>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-head">
+              <div>
+                <h3>Software Developer Intern</h3>
+                <div class="company">Diaryz · Canada</div>
+              </div>
+              <div class="date">Jan 2023 – Dec 2023</div>
             </div>
-        </section>
-        <hr>
-        <section>
-            <h2>
-                Personal Projects Experience
-            </h2>
-            <div>
-                <div>
-                    <span class="heading project-heading">
-                        Resume Builder 
-                    </span>
-                    <span>
-                        &nbsp-&nbsp
-                    </span>
-                    <span class="tech-stack">
-                        Node Express, TypeScript, React, Redux, Bootstrap, MongoDB, JWT, Bcryptjs
-                    </span>
-                </div>
-                <ul>
-                    <li>
-                        Users can register and login to add their Profile, Experience and Education information
-                    </li>
-                    <li>
-                        Designed and developed backend REST API in Node, Express, MongoDB and Mongoose 
-                    </li>
-                    <li>
-                        Set up user authentication and authorization using JWT and Bcryptjs
-                    </li>
-                    <li>
-                        Created frontend using React, TypeScript, Bootstrap and Redux
-                    </li>
-                    <li>
-                        Project link: &nbsp<a href="https://github.com/srehan17/resumeApp" target="_blank">https://github.com/srehan17/resumeApp</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <span class="heading project-heading">
-                            URL Shortener API
-                        </span>
-                        <span>
-                            &nbsp-&nbsp
-                        </span>
-                        <span class="tech-stack">
-                            Node Express, JavaScript, EJS, MongoDB, Mocha, Docker, GitHub Actions
-                        </span>
-                    </div>
-                    <ul>
-                        <li>
-                            Developed URL Shortener API to enable users to convert a URL into a short numeric URL.
-                        </li>
-                        <li>
-                            Users can see a list of URLs, delete URLs and see flash messages for notifications.
-                        </li>
-                        <li>
-                            Project link: &nbsp<a href="https://github.com/srehan17/url-shortener" target="_blank">https://github.com/srehan17/url-shortener</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <span class="heading project-heading">
-                                Blog Posts API 
-                            </span>
-                            <span>
-                                &nbsp-&nbsp
-                            </span>
-                            <span class="tech-stack">
-                                Go, Gin, GORM, PostgreSQL
-                            </span>
-                        </div>
-                        <ul>
-                            <li>
-                                Users can create, update, view and delete blog posts
-                            </li>                            
-                            <li>
-                                Project link: &nbsp<a href="https://github.com/srehan17/blog-go" target="_blank">https://github.com/srehan17/blog-go</a>
-                            </li>
-                        </ul>
-                    </div>
-                <div>
-                    <div>
-                        <span class="heading project-heading">
-                            25+5 (Pomodoro) Clock 
-                        </span>
-                        <span>
-                            &nbsp-&nbsp
-                        </span>
-                        <span class="tech-stack">
-                            React, JavaScript, CSS, GitHub Actions
-                        </span>
-                    </div>
-                    <ul>
-                        <li>
-                            Built a web app which helps users to maximize productivity by observing timed breaks.
-                        </li>
-                        <li>
-                            Project code link: &nbsp<a href="https://github.com/srehan17/clock-25-5" target="_blank">https://github.com/srehan17/clock-25-5</a>
-                        </li>
-                        <li>
-                            Project deployed on: &nbsp<a href="https://srehan17.github.io/clock-25-5" target="_blank">https://srehan17.github.io/clock-25-5</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <span class="heading project-heading">
-                            Shopping Cart 
-                        </span>
-                        <span>
-                            &nbsp-&nbsp
-                        </span>
-                        <span class="tech-stack">
-                            React, TypeScript, CSS
-                        </span>
-                    </div>
-                    <ul>
-                        <li>
-                            Created a shopping cart app where customers can add/remove items and see the total.
-                        </li>
-                        <li>
-                            Project code link: <a href="https://github.com/srehan17/shoppingcart-react-ts" target="_blank">https://github.com/srehan17/shoppingcart-react-ts</a>
-                        </li>
-                        <li>
-                            Project deployed on: <a href="https://srehan17.github.io/shoppingcart-react-ts" target="_blank">https://srehan17.github.io/shoppingcart-react-ts</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <span class="heading project-heading">
-                            Road Weather Information System
-                        </span>
-                        <span>
-                            &nbsp-&nbsp
-                        </span>
-                        <span class="tech-stack">
-                            Node Express, Passport, EJS, MongoDB, Mocha, Docker
-                        </span>
-                    </div>
-                    <ul>
-                        <li>
-                            Creating models and schemas with validations using MongoDB and Mongoose
-                        </li>
-                        <li>
-                            Setting up user authentication using Passport.js and Bcrypt
-                        </li>
-                        <li>
-                            Using EJS templating engine to generate dynamic HTML content and display flash messages
-                        </li>
-                        <li>
-                            Using Open Weather API to fetch and display weather conditions for searched location
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <span class="heading project-heading">
-                            Bookstore API
-                        </span>
-                        <span>
-                            &nbsp-&nbsp
-                        </span>
-                        <span class="tech-stack">
-                            Node Express, JavaScript, Postman, Sequelize, Jest
-                        </span>
-                    </div>
-                    <ul>
-                        <li>
-                            Customers can view and order books while vendors can add, edit and delete books
-                        </li>
-                        <li>
-                            Project link: <a href="https://github.com/srehan17/bookstore" target="_blank">https://github.com/srehan17/bookstore</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <span class=" heading project-heading">
-                            Friends App
-                        </span>
-                        <span>
-                            &nbsp-&nbsp
-                        </span>
-                        <span class="tech-stack">
-                            Ruby on Rails, Bootstrap
-                        </span>
-                    </div>
-                    <ul>
-                        <li>
-                            Developed app which allows users to signup and login to manage their friends’ list.
-                        </li>
-                        <li>
-                            Project link: <a href="https://github.com/srehan17/friends" target="_blank">https://github.com/srehan17/friends</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <span class="heading project-heading">
-                            Smartnotes
-                        </span>
-                        <span>
-                            &nbsp-&nbsp
-                        </span>
-                        <span class="tech-stack">
-                            Python, Django
-                        </span>
-                    </div>
-                    <ul>
-                        <li>
-                            Created app in which users can sign up and login to create, update and delete notes.
-                        </li>
-                        <li>
-                            Project link: <a href="https://github.com/srehan17/smartnotes" target="_blank">https://github.com/srehan17/smartnotes</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <hr>
-                <section>
-            <h2>
-                Education
-            </h2>
-            <div class="group">
-                <div class="row">
-                    <h3>Postgraduate Program in Computer Applications Development</h3>
-                    <div class="year">2018</div>
-                </div>
-                <div class="institution-name">
-                    Conestoga College, Canada
-                </div>
-                <div>
-                    Coursework included: Object Oriented Programming using C# and ASP.NET MVC; Database management using MS SQL; Web Development using HTML, CSS, JavaScript, Wordpress; UML Diagrams; Agile Software Development Methodology
-                </div>
-            </div>
-            <div class="group">
-                <div class="row">
-                    <div class="row"><h3>Bachelor's Degree in Mathematics</h3>&nbsp<span>(vetted by World Education Services)</span></div>
-                    <div class="year">2007</div>
-                </div>
-                <div class="institution-name">
-                    Lahore University of Management Sciences, Pakistan
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section>
-            <h2>
-                Certifications and Learning
-            </h2>
-           
-            <div class="row group">
-                <div>
-                    Back End Development and APIs, FreeCodeCamp Certification
-                </div>  
-                <div>
-                    2023
-                </div>
-            </div>
-            <div class="row group">
-                <div>
-                    Front End Development Libraries, FreeCodeCamp Certification
-                </div>
-                <div>
-                    2023
-                </div>   
-            </div>
-            <div class="row group">
-                <div>
-                    JavaScript Algorithms & Data Structures, FreeCodeCamp Certification
-                </div> 
-                <div class="year">
-                    2023
-                </div>                
-            </div>
-        </section>
+            <ul>
+              <li>Built reusable React Native features using TypeScript and developed RESTful APIs with Go (Gin) and PostgreSQL.</li>
+              <li>Worked with a distributed team to translate requirements into implementation and deliver features.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="panel section" style="margin-bottom: 1rem;">
+        <h2>Selected Projects</h2>
+        <div class="projects">
+          <a class="project-card" href="https://github.com/srehan17/shoppingcart-react-ts" target="_blank" rel="noreferrer">
+            <h3>Shopping Cart</h3>
+            <div class="stack">React · TypeScript · CSS</div>
+            <p>Responsive cart app with quantity updates, totals, and component testing.</p>
+          </a>
+
+          <a class="project-card" href="https://github.com/srehan17/resumeApp" target="_blank" rel="noreferrer">
+            <h3>Resume Builder</h3>
+            <div class="stack">Node.js · Express · React · MongoDB</div>
+            <p>Full-stack resume app with JWT authentication and a responsive frontend.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel section" style="margin-bottom: 1rem;">
+        <h2>Community Engagement and Continuous Learning</h2>
+        <ul>
+          <li>Active participant in Women in Communications and Technology (WCT) Mentoring Circles &amp; Pods programs</li>
+          <li>Engaged in local tech community initiatives through Gender Equity Tech, Women in Tech, and KWJavaScript meetups</li>
+          <li>Continuously upskilling through LinkedIn Learning and self-directed exploration of modern tools and frameworks</li>
+        </ul>      
+      </section>
+
+      <section id="contact" class="panel section contact">
+        <h2>Contact</h2>
+        <p>
+            Open to frontend and full-stack software development opportunities.      
+        </p>
+        <div class="hero-actions">
+          <a class="button button-secondary" href="mailto:sarahahmad17@gmail.com">sarahahmad17@gmail.com</a>
+        </div>
+      </section>
+
+      <div class="footer-note">© 2026 Sarah Rehan</div>
     </main>
-    </div>
-</body>
+  </body>
 </html>
