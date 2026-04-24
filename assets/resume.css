@@ -230,9 +230,10 @@ strong {
   font-weight: 700;
 }
 
-/* Experience / education emphasis */
+/* Section heading emphasis */
 .experience-section h2,
-.education-section h2 {
+.education-section h2,
+.bottom-grid h2 {
   font-size: 13.5px;
 }
 
