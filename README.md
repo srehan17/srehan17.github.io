@@ -17,6 +17,7 @@ A clean, recruiter-friendly portfolio built with HTML and CSS to showcase my exp
 - Selected Projects
 - Community Engagement & Continuous Learning
 - Contact
+- Resume
 
 ## Note
 This project is intended for personal portfolio use.

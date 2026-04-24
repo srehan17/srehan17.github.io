@@ -71,6 +71,7 @@ a {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 1rem;
   font-size: 0.92rem;
   color: var(--muted);
@@ -78,6 +79,18 @@ a {
 
 .nav-links a:hover {
   color: var(--text);
+}
+
+.nav-links a[href$="resume.html"] {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  color: var(--text);
+}
+
+.nav-links a[href$="resume.html"]:hover {
+  background: var(--text);
+  color: #fff;
 }
 
 main {

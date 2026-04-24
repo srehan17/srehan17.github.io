@@ -1,0 +1,303 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #5f6368;
+  --soft: #8a8f98;
+  --line: #d8dbe0;
+  --accent: #3f5c7a;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f4f6;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 1.45;
+}
+
+body {
+  padding: 24px 0;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  background: var(--bg);
+  padding: 15mm 15mm 14mm;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.header {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 20px;
+  align-items: start;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--accent);
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.role {
+  margin: 8px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.contact {
+  display: grid;
+  gap: 6px;
+  justify-items: end;
+  font-size: 11.5px;
+  text-align: right;
+}
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-item:hover {
+  color: var(--accent);
+}
+
+.contact-item .icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.contact-item .icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.contact a,
+.contact span {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Sections */
+.section {
+  margin-top: 14px;
+}
+
+.summary {
+  margin-top: 2px;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  font-size: 11.5px;
+}
+
+ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+
+li {
+  margin: 0 0 4px;
+  font-size: 11.3px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* Experience / education emphasis */
+.experience-section h2,
+.education-section h2 {
+  font-size: 13px;
+}
+
+.item,
+.project,
+.edu {
+  margin-bottom: 12px;
+}
+
+.item-head,
+.edu-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 3px;
+}
+
+.item-head p,
+.edu p,
+.project p:first-of-type {
+  margin-top: 2px;
+  color: var(--muted);
+}
+
+.item-head span,
+.edu-head span {
+  font-size: 11px;
+  color: var(--soft);
+  white-space: nowrap;
+}
+
+.experience-section .item,
+.education-section .edu {
+  padding-left: 10px;
+  border-left: 3px solid var(--accent);
+}
+
+/* Layout blocks */
+.two-col {
+  display: grid;
+  grid-template-columns: 1.35fr 0.95fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.bottom-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.bottom-grid > .section {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.compact li {
+  margin-bottom: 3px;
+}
+
+.subhead {
+  margin-top: 0;
+}
+
+/* Print */
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff;
+    padding: 0;
+  }
+
+  .page {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* Mobile fallback */
+@media (max-width: 900px) {
+  body {
+    padding: 0;
+    background: #ffffff;
+  }
+
+  .page {
+    width: 100%;
+    min-height: auto;
+    padding: 22px;
+    box-shadow: none;
+  }
+
+  .header,
+  .two-col,
+  .bottom-grid,
+  .item-head,
+  .edu-head {
+    display: block;
+  }
+
+  .contact {
+    margin-top: 12px;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .experience-section .item,
+  .education-section .edu {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+
+.section {
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+/* remove line for first section after header */
+.header + .section {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 12px;
+}
+.section {
+  margin-top: 16px;
+}
+
+.item,
+.project,
+.edu {
+  margin-bottom: 10px;
+}
