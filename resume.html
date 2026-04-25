@@ -18,10 +18,16 @@
 </head>
 <body>
   <main class="page">
-    <button class="download-btn page-download" onclick="window.print()">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 16l-5-5 1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11l-5 5zm-7 4v-2h14v2H5z"/></svg>
-      Download PDF
-    </button>
+    <div class="page-actions">
+      <a class="download-btn" href="./index.html">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        Back
+      </a>
+      <button class="download-btn" onclick="window.print()">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 16l-5-5 1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11l-5 5zm-7 4v-2h14v2H5z"/></svg>
+        Download PDF
+      </button>
+    </div>
     <header class="header">
       <div class="header-top">
         <div class="header-identity">

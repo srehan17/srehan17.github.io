@@ -373,10 +373,12 @@ strong {
   margin-top: 0;
 }
 
-.page-download {
+.page-actions {
   position: absolute;
   top: 5mm;
   right: 15mm;
+  display: flex;
+  gap: 6px;
 }
 
 .download-btn {
@@ -422,8 +424,8 @@ strong {
   }
 
   .header-actions,
-  .page-download {
-    display: none;
+  .page-actions {
+    display: none !important;
   }
 
   .header-top {
