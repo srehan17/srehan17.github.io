@@ -83,18 +83,20 @@ a {
 
 .nav-download-btn {
   padding: 0.3rem 0.8rem;
-  border: 1px solid var(--text);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.18);
   color: var(--text);
   font-size: 0.92rem;
   font-family: inherit;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.15s, color 0.15s;
 }
 
 .nav-download-btn:hover {
-  background: var(--text);
+  background: rgba(0, 0, 0, 0.45);
+  border-color: transparent;
   color: #fff;
 }
 
