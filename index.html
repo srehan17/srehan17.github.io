@@ -32,7 +32,7 @@
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="./resume.html" target="_blank" rel="noreferrer">Resume</a>
+          <button class="nav-download-btn" onclick="var w=window.open('./resume.html'); w.addEventListener('load', function(){ w.print(); });">Resume</button>
         </div>
       </div>
     </nav>
@@ -44,7 +44,7 @@
           <h1>Sarah Rehan</h1>
           <div class="hero-role"><span>React · React Native · Node.js</span><span>Waterloo, ON</span></div>
           <p>
-            Building secure, scalable web and mobile applications with a focus on frontend architecture, API integrations, and reliable, user-centred experiences.
+            I'm a full-stack developer with experience in digital identity and mobile applications. I enjoy building reliable systems and contributing to developer communities through mentorship and meetups.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="mailto:sarahahmad17@gmail.com">Email</a>
@@ -55,8 +55,39 @@
 
         <aside class="panel hero-side section">
           <h2>Skills</h2>
-          <div class="skills-wrap">
-            <span>TypeScript</span><span>JavaScript</span><span>C#</span><span>C++</span><span>React Native</span><span>React</span><span>HTML</span><span>CSS</span><span>Node.js</span><span>Express</span><span>ASP.NET MVC</span><span>MS SQL</span><span>PostgreSQL</span><span>MongoDB</span><span>REST APIs</span><span>Jest</span><span>Git</span><span>TestFlight</span><span>Firebase</span><span>GitHub Actions</span><span>Docker</span>
+          <div class="skills-grouped">
+            <div class="skill-row">
+              <span class="skill-label">Languages</span>
+              <span class="skill-values">TypeScript, JavaScript, C#, C++</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Frontend</span>
+              <span class="skill-values">React, React Native, HTML, CSS</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Backend</span>
+              <span class="skill-values">Node.js, Express, ASP.NET MVC</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Databases</span>
+              <span class="skill-values">PostgreSQL, MongoDB, MS SQL</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Tools &amp; DevOps</span>
+              <span class="skill-values">Git, GitLab, GitHub Actions</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Testing</span>
+              <span class="skill-values">Jest, React Testing Library</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Deployment</span>
+              <span class="skill-values">TestFlight, Firebase App Distribution</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Collaboration</span>
+              <span class="skill-values">ClickUp, Microsoft Teams</span>
+            </div>
           </div>
         </aside>
       </section>
@@ -79,7 +110,6 @@
               <li>Collaborate with globally distributed team using GitLab, ClickUp, and Microsoft Teams to support delivery.</li>              
               <li>Developed a full-stack demo authoring tool (React, Node.js/Express) for creating interactive product walkthroughs with script-based workflows, overlays, and clickable hot zones.</li>
               <li>Manage release validation and deployment using TestFlight and Firebase App Distribution.</li>
-              <li>Leverage AI-assisted tools (ChatGPT, Claude) to accelerate development and improve debugging and code quality.</li>
             </ul>
           </article>
 
@@ -92,8 +122,7 @@
               <div class="date">Jan 2023 – Dec 2023</div>
             </div>
             <ul>
-              <li>Built reusable React Native features using TypeScript and developed RESTful APIs with Go (Gin) and PostgreSQL.</li>
-              <li>Worked with a distributed team to translate requirements into implementation and deliver features.</li>
+              <li>Developed app using React Native and TypeScript and built RESTful APIs with Go (Gin) and PostgreSQL.</li>            
             </ul>
           </article>
         </div>
@@ -123,19 +152,20 @@
         </div>
       </section>
 
+
       <section id="projects" class="panel section" style="margin-bottom: 1rem;">
         <h2>Selected Projects</h2>
         <div class="projects">
           <a class="project-card" href="https://github.com/srehan17/shoppingcart-react-ts" target="_blank" rel="noreferrer">
             <h3>Shopping Cart</h3>
-            <div class="stack">React · TypeScript · CSS · i18n · Testing</div>
-            <p>Responsive cart app with quantity updates, totals, and component testing.</p>
+            <div class="stack">React · TypeScript · CSS · i18n · Vitest · React Testing Library</div>
+            <p>Built a multilingual shopping cart with dynamic item filtering, real-time price calculations, and localized currency formatting using i18n. Implemented state management for cart updates and wrote unit/integration tests with Vitest and React Testing Library to validate core user interactions.</p>
           </a>
 
-          <a class="project-card" href="https://github.com/srehan17/resumeApp" target="_blank" rel="noreferrer">
+          <a class="project-card" href="https://github.com/srehan17/resumebuilder" target="_blank" rel="noreferrer">
             <h3>Resume Builder</h3>
-            <div class="stack">Node.js · Express · React · MongoDB · JWT</div>
-            <p>Full-stack resume app with JWT authentication and a responsive frontend.</p>
+            <div class="stack">Node.js · Express · React · MongoDB · JWT · REST API · Testing</div>
+            <p>Developed a full-stack resume builder with JWT authentication, REST APIs, and MongoDB persistence. Implemented protected routes, form validation, and CRUD operations for resume data, with a responsive React interface for real-time editing and preview.</p>
           </a>
         </div>
       </section>
@@ -143,9 +173,8 @@
       <section class="panel section" style="margin-bottom: 1rem;">
         <h2>Community Engagement and Continuous Learning</h2>
         <ul>
-          <li>Active participant in Women in Communications and Technology (WCT) Mentoring Circles &amp; Pods programs</li>
-          <li>Engaged in local tech community initiatives through Gender Equity Tech, Women in Tech, and KWJavaScript meetups</li>
-          <li>Continuously upskilling through LinkedIn Learning and self-directed exploration of modern tools and frameworks</li>
+          <li>Volunteer Connector at KW Multicultural Centre; Participant in WCT Mentoring Circles &amp; Pods</li>          
+          <li>Active in local tech communities, with continuous learning through personal projects and modern tools</li>
         </ul>      
       </section>
 

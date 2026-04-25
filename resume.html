@@ -18,6 +18,10 @@
 </head>
 <body>
   <main class="page">
+    <button class="download-btn page-download" onclick="window.print()">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 16l-5-5 1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11l-5 5zm-7 4v-2h14v2H5z"/></svg>
+      Download PDF
+    </button>
     <header class="header">
       <div class="header-top">
         <div class="header-identity">
@@ -52,8 +56,7 @@
         </div>
       </div>
       <p class="summary">
-        Building secure, scalable web and mobile applications with a focus on frontend architecture, API/SDK integration, and system reliability. Experienced in debugging, cross-team collaboration, and delivering production-ready features.
-      </p>
+        I'm a full-stack developer with experience in digital identity and mobile applications. I enjoy building reliable systems and contributing to developer communities through mentorship and meetups.      </p>
     </header>
 
     <section class="section experience-section">
@@ -74,7 +77,6 @@
           <li>Investigate and debug cross-system issues by adding logging and analyzing request/response flows, collaborating with backend team to identify and resolve root causes.</li>
           <li>Developed a full-stack demo authoring tool (React, Node.js/Express) for creating interactive product walkthroughs with script-based workflows, overlays, and clickable hot zones.</li>    
           <li>Manage release validation and deployment using TestFlight (iOS) and Firebase App Distribution (Android).</li>
-          <li>Leverage AI tools (Claude, ChatGPT) to accelerate development, debug issues, and improve code quality.</li>
         </ul>
       </div>
 
@@ -116,38 +118,69 @@
       </div>
     </section>
 
+    <section class="section skills-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-label">Languages</span>
+          <span class="skill-values">TypeScript, JavaScript, C#, C++</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Frontend</span>
+          <span class="skill-values">React, React Native, HTML, CSS</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Backend</span>
+          <span class="skill-values">Node.js, Express, ASP.NET MVC</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Databases</span>
+          <span class="skill-values">PostgreSQL, MongoDB, MS SQL</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Tools &amp; DevOps</span>
+          <span class="skill-values">Git, GitLab, GitHub Actions</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Testing</span>
+          <span class="skill-values">Jest, React Testing Library</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Deployment</span>
+          <span class="skill-values">TestFlight, Firebase App Distribution</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Collaboration</span>
+          <span class="skill-values">ClickUp, Microsoft Teams</span>
+        </div>
+      </div>
+    </section>
+
     <div class="bottom-grid">
       <section class="section">
         <h2>Projects</h2>
 
         <div class="project">
-          <h3>Shopping Cart <span class="tech">React · TypeScript · CSS · i18n · Testing</span></h3>
+          <h3>Shopping Cart <span class="tech">React · TypeScript · CSS · i18n · Vitest · React Testing Library</span></h3>
           <p>
-            Built a multilingual shopping cart with filtering, dynamic totals, localized currency, and tested core interactions.
+            Built a multilingual shopping cart with dynamic item filtering, real-time price calculations, and localized currency formatting using i18n. Implemented state management for cart updates and wrote unit/integration tests with Vitest and React Testing Library to validate core user interactions.
           </p>
         </div>
 
         <div class="project">
-          <h3>Resume Builder <span class="tech">Node.js · Express · React · MongoDB · Mongoose · JWT</span></h3>
+          <h3>Resume Builder <span class="tech">Node.js · Express · React · MongoDB · JWT · REST API · Testing</span></h3>
           <p>
-            Developed a full-stack resume builder with JWT authentication, REST APIs, MongoDB persistence, and responsive UI.
-          </p>
-        </div>
-        <div class="project">
-          <h3>CI/CD Demo <span class="tech">Node.js · Express · GitHub Actions · Docker · Render</span></h3>
-          <p>
-            Implemented CI/CD pipeline with automated testing, Docker builds, and cloud deployment.  
+            Developed a full-stack resume builder with JWT authentication, REST APIs, and MongoDB persistence. Implemented protected routes, form validation, and CRUD operations for resume data, with a responsive React interface for real-time editing and preview.
           </p>
         </div>
       </section>
 
       <section class="section">
-        <h2>Community and Learning</h2>
+        <h2>Community Engagement and Continuous Learning</h2>
         <div class="item">
           <ul class="compact">
-            <li>WCT Mentoring Circles &amp; Pods participant</li>
-            <li>Active in local tech communities and meetups</li>
-            <li>Continuous learning through personal projects and modern tooling</li>
+            <li>Volunteer Connector at KW Multicultural Centre; Participant in WCT Mentoring Circles &amp; Pods</li>            
+            <li>Active in local tech communities, with continuous learning through personal projects and modern tools</li>
           </ul>
         </div>
       </section>

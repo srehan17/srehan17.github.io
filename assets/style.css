@@ -81,14 +81,19 @@ a {
   color: var(--text);
 }
 
-.nav-links a[href$="resume.html"] {
+.nav-download-btn {
   padding: 0.3rem 0.8rem;
-  border: 1px solid currentColor;
+  border: 1px solid var(--text);
   border-radius: 6px;
+  background: transparent;
   color: var(--text);
+  font-size: 0.92rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
 }
 
-.nav-links a[href$="resume.html"]:hover {
+.nav-download-btn:hover {
   background: var(--text);
   color: #fff;
 }
@@ -219,6 +224,32 @@ h1 {
 .project-card p,
 .experience-item li {
   color: var(--muted);
+}
+
+.skills-grouped {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3rem 0.6rem;
+}
+
+.skill-row {
+  display: contents;
+}
+
+.skill-row .skill-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  white-space: nowrap;
+  align-self: start;
+}
+
+.skill-values {
+  font-size: 0.84rem;
+  color: var(--muted);
+  align-self: start;
 }
 
 .skills-wrap {
