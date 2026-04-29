@@ -504,8 +504,13 @@ strong {
   .page {
     width: 100%;
     min-height: auto;
-    padding: 22px;
+    padding: 16px 22px 22px;
     box-shadow: none;
+  }
+
+  .page-actions {
+    position: static;
+    margin-bottom: 14px;
   }
 
   .header,

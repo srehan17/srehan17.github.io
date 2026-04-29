@@ -363,7 +363,11 @@ li + li {
 }
 
 @media (max-width: 640px) {
-  .nav-inner,
+  .nav-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .experience-head {
     flex-direction: column;
     align-items: flex-start;
@@ -372,6 +376,7 @@ li + li {
   .nav-links {
     flex-wrap: wrap;
     gap: 0.65rem;
+    justify-content: center;
   }
 
   .hero-main,
