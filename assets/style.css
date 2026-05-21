@@ -210,6 +210,9 @@ h1 {
 
 .hero-side {
   padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .grid {
