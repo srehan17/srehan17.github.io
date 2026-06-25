@@ -448,26 +448,26 @@ strong {
   }
 
   .section {
-    margin-top: 10px;
-    padding-top: 8px;
+    margin-top: 6px;
+    padding-top: 4px;
   }
 
   .header + .section {
-    margin-top: 8px;
+    margin-top: 4px;
   }
 
   .item,
   .project,
   .edu {
-    margin-bottom: 6px;
+    margin-bottom: 3px;
   }
 
   ul {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 
   li {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
 
   .summary {
