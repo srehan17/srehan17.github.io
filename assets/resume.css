@@ -493,6 +493,13 @@ strong {
   }
 }
 
+.coursework {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 3px;
+    line-height: 1.3;
+}
+
 /* Mobile fallback */
 @media screen and (max-width: 900px) {
   body {
