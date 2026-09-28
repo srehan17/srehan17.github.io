@@ -509,7 +509,7 @@ li:last-child {
   }
 
   body {
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   .page {
@@ -526,8 +526,8 @@ li:last-child {
   }
 
   .header {
-    margin-bottom: 9px;
-    padding: 10px 15px 12px;
+    margin-bottom: 6px;
+    padding: 8px 15px;
   }
 
   .header-top {
@@ -561,7 +561,7 @@ li:last-child {
   }
 
   .section {
-    margin-top: 7px;
+    margin-top: 5px;
     padding-top: 4px;
   }
 
@@ -571,7 +571,7 @@ li:last-child {
   }
 
   h2 {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-size: 11.5pt;
   }
 
@@ -582,7 +582,7 @@ li:last-child {
   p,
   li {
     font-size: 11pt;
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   ul {
@@ -590,7 +590,7 @@ li:last-child {
   }
 
   li {
-    margin-bottom: 2.5px;
+    margin-bottom: 1.5px;
   }
 
   .item,
@@ -601,7 +601,11 @@ li:last-child {
   }
 
   .item {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+  }
+
+  .edu {
+    margin-bottom: 7px;
   }
 
   .item-head p,
@@ -617,7 +621,7 @@ li:last-child {
   }
 
   .skills-grid {
-    gap: 3px 22px;
+    gap: 2px 22px;
   }
 
   .skill-label {
@@ -629,7 +633,7 @@ li:last-child {
   }
 
   .credential {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   .credential h3 {
