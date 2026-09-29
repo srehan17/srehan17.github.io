@@ -238,6 +238,10 @@ h1 {
   color: var(--muted);
 }
 
+.experience-item li strong {
+  font-weight: 600;
+}
+
 .skills-grouped {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -300,17 +304,24 @@ h1 {
 
 .experience-head h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .company {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 1rem;
+}
+
+.coursework {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
 }
 
 .date {
   color: var(--subtle);
-  font-size: 0.84rem;
+  font-size: 0.92rem;
   white-space: nowrap;
 }
 
