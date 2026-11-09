@@ -196,7 +196,15 @@ h1 {
 }
 
 .button:hover {
-  transform: translateY(-1px);
+  background: #e8edf2;
+  border-color: #9aaabd;
+  transform: none;
+}
+
+.button:focus-visible,
+.nav-download-btn:focus-visible {
+  outline: 2px solid #3f5c7a;
+  outline-offset: 3px;
 }
 
 .chip {
@@ -227,9 +235,11 @@ h1 {
 }
 
 .section h2 {
+  color: #3f5c7a;
   margin: 0 0 0.8rem;
   font-size: 1.05rem;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .contact p,
@@ -350,10 +360,6 @@ li + li {
   transition: 0.2s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(24, 24, 27, 0.2);
-}
 
 .project-card h3 {
   margin: 0 0 0.2rem;
@@ -407,4 +413,38 @@ li + li {
   .button {
     width: 100%;
   }
+}
+
+#professional-development .experience-head {
+  margin-bottom: 0;
+}
+
+#education .experience-item:not(:has(.coursework)) .experience-head {
+  margin-bottom: 0;
+}
+
+/* Compact project entries with title and technologies sharing a row. */
+.project-card {
+  padding: 0.9rem 1rem;
+}
+
+.project-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.project-heading h3,
+.project-heading .stack {
+  margin: 0;
+}
+
+.project-card p {
+  margin: 0;
+}
+
+.project-card .button {
+  padding: 0.45rem 0.8rem;
 }

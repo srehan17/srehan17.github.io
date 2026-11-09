@@ -42,7 +42,7 @@
         Back
       </a>
 
-      <button class="download-btn" onclick="window.print()">
+      <a class="download-btn" href="./Sarah_Rehan_Resume.pdf" download="Sarah_Rehan_Resume.pdf">
         <svg
           viewBox="0 0 24 24"
           fill="currentColor"
@@ -55,7 +55,7 @@
           />
         </svg>
         Download PDF
-      </button>
+      </a>
     </div>
 
     <!-- Header -->
@@ -129,7 +129,7 @@
       </div>
 
       <p class="summary">
-        Software Developer with 2+ years of experience building web and mobile applications using TypeScript, React, React Native, and Node.js. Experienced in API integration, internal tooling, cross-platform development, and application delivery, with growing expertise in Python and cloud technologies.
+        Software Developer with 2+ years of experience building web and mobile applications using JavaScript, TypeScript, React, React Native, and Node.js. Experienced in building REST APIs, implementing digital identity workflows, and delivering cross-platform features. Skilled in using AI productivity tools for development, debugging, and documentation, with independent review and validation.
       </p>
     </header>
 
@@ -177,9 +177,22 @@
           </li>
 
           <li>
-            <strong>Improved development efficiency with AI-assisted workflows</strong>
+            <strong>Used AI productivity tools to streamline development workflows</strong>
             for code generation, prototyping, debugging, and documentation while independently reviewing and validating generated output.
           </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <div>
+            <h3>Software Developer Intern</h3>
+            <p>Diaryz · Canada</p>
+          </div>
+          <span>Jan 2023 – Dec 2023</span>
+        </div>
+        <ul>
+          <li><strong>Developed mobile application features</strong> using React Native and JavaScript, including reusable UI components, navigation flows, and API integrations.</li>
         </ul>
       </div>
     </section>
@@ -235,28 +248,6 @@
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section class="section certifications-section">
-      <h2>Certifications & Professional Development</h2>
-
-      <div class="credential">
-        <div>
-          <h3>Microsoft Azure Essentials Professional Certificate</h3>
-          <p>Microsoft and LinkedIn</p>
-        </div>
-        <span>2026</span>
-      </div>
-
-      <div class="credential">
-        <div>
-          <h3>Python Developer Certification</h3>
-          <p>freeCodeCamp</p>
-        </div>
-        <span>2026</span>
-      </div>
-
-    </section>
-
     <!-- Education -->
     <section class="section education-section">
       <h2>Education</h2>
@@ -288,14 +279,77 @@
       </div>
     </section>
 
+    <!-- Projects -->
+    <section class="section projects-section" hidden>
+      <h2>Selected Projects</h2>
+      <div class="project">
+        <h3><a href="https://github.com/srehan17/smartnotes">Smart Notes</a></h3>
+        <span class="tech">Python · Django</span>
+        <p>Built a Python/Django notes app with authentication, ownership-based access control, and automated tests covering account flows, CRUD operations, and security checks.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/srehan17/resumebuilder">Resume Builder</a></h3>
+        <span class="tech">React · Node.js · Express · MongoDB · JWT</span>
+        <p>Built a full-stack resume editor with REST APIs, JWT authentication, MongoDB persistence, and live preview. Added frontend unit tests and backend API integration tests.</p>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section certifications-section">
+      <h2>Professional Development</h2>
+
+      <div class="credential">
+        <div>
+          <h3>AWS Cloud Practitioner Essentials Course</h3>
+          <p>Amazon Web Services</p>
+        </div>
+        <span>2026</span>
+      </div>
+
+      <div class="credential">
+        <div>
+          <h3>Microsoft Azure Essentials Professional Certificate</h3>
+          <p>Microsoft and LinkedIn</p>
+        </div>
+        <span>2026</span>
+      </div>
+
+      <div class="credential">
+        <div>
+          <h3>Python Developer Certification</h3>
+          <p>freeCodeCamp</p>
+        </div>
+        <span>2026</span>
+      </div>
+
+    </section>
+
     <!-- Community -->
     <section class="section community-section">
       <h2>Community Engagement</h2>
 
-      <p>
-        Participate in WCT Mentoring Circles &amp; Pods programs and local tech community events.
-      </p>
+      <div class="item">
+        <div class="item-head">
+          <div>
+            <h3>English Conversation Circle Volunteer</h3>
+            <p class="volunteer-org">YMCA of Three Rivers</p>
+          </div>
+          <span>Oct 2026 – Present</span>
+        </div>
+        <p>Facilitate online conversations to help newcomers practise English and build confidence.</p>
+      </div>
+      <div class="item">
+        <div class="item-head">
+          <div>
+            <h3>Mentee and Event Volunteer</h3>
+            <p class="volunteer-org">Women in Communications and Technology</p>
+          </div>
+          <span>Sep 2026 – Present</span>
+        </div>
+        <p>Participate in WCT Mentoring Circles and Pods, exchanging perspectives on leadership, career development, and professional visibility. Assisted with setup and teardown for a WCT event.</p>
+      </div>
     </section>
+
 
   </main>
 </body>
