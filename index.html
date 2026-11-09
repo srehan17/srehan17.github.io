@@ -478,5 +478,16 @@
   <div class="footer-note">© 2026 Sarah Rehan</div>
 </main>
 
+    <script>
+      const navigation = document.querySelector(".nav");
+      const updateScrollOffset = () => {
+        document.documentElement.style.setProperty(
+          "--nav-scroll-offset",
+          `${navigation.getBoundingClientRect().height + 8}px`
+        );
+      };
+      updateScrollOffset();
+      new ResizeObserver(updateScrollOffset).observe(navigation);
+    </script>
   </body>
 </html>

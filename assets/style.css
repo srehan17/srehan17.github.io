@@ -448,3 +448,8 @@ li + li {
 .project-card .button {
   padding: 0.45rem 0.8rem;
 }
+
+/* Keep section headings visible below the sticky navigation. */
+main section[id] {
+  scroll-margin-top: var(--nav-scroll-offset, 4rem);
+}
