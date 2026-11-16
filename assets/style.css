@@ -1,3 +1,5 @@
+/* Portfolio: base components and responsive layout. */
+
 :root {
   --bg: #f6f4ef;
   --surface: rgba(255, 255, 255, 0.72);
@@ -216,13 +218,6 @@ h1 {
   font-size: 0.84rem;
 }
 
-.hero-side {
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -250,12 +245,6 @@ h1 {
 
 .experience-item li strong {
   font-weight: 600;
-}
-
-.skills-grouped {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.3rem 0.6rem;
 }
 
 .skill-row {
@@ -350,17 +339,6 @@ li + li {
   gap: 1rem;
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1.2rem;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.72);
-  transition: 0.2s ease;
-}
-
-
 .project-card h3 {
   margin: 0 0 0.2rem;
   font-size: 0.98rem;
@@ -377,6 +355,100 @@ li + li {
   text-align: center;
   color: var(--subtle);
   font-size: 0.82rem;
+}
+
+#professional-development .experience-head {
+  margin-bottom: 0;
+}
+
+#education .experience-item:not(:has(.coursework)) .experience-head {
+  margin-bottom: 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  transition: 0.2s ease;
+  padding: 0.9rem 1rem;
+}
+
+.project-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.project-heading h3,
+.project-heading .stack {
+  margin: 0;
+}
+
+.project-card p {
+  margin: 0;
+}
+
+.project-card .button {
+  padding: 0.45rem 0.8rem;
+}
+
+main section[id] {
+  scroll-margin-top: var(--nav-scroll-offset, 4rem);
+}
+
+.hero-side {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 1.8rem;
+}
+
+.hero-main .eyebrow {
+  font-size: 1.05rem;
+  line-height: 1.45;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #3f5c7a;
+}
+
+.hero-side.section h2 {
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin-top: 0;
+}
+
+.skills-grouped .skill-row {
+  display: block;
+}
+
+.skills-grouped .skill-label {
+  display: block;
+  margin-bottom: 0.15rem;
+  white-space: normal;
+}
+
+.skills-grouped .skill-values {
+  display: block;
+  line-height: 1.45;
+}
+
+.skills-grouped {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem 1rem;
+}
+
+.contact-card p {
+  margin: 0;
+}
+
+.contact-card .hero-actions {
+  margin-top: 0.8rem;
 }
 
 @media (max-width: 900px) {
@@ -413,43 +485,20 @@ li + li {
   .button {
     width: 100%;
   }
+
+  .hero-side {
+    padding-top: 1rem;
+  }
 }
 
-#professional-development .experience-head {
-  margin-bottom: 0;
+@media (max-width: 480px) {
+  .skills-grouped {
+    grid-template-columns: 1fr;
+  }
 }
 
-#education .experience-item:not(:has(.coursework)) .experience-head {
-  margin-bottom: 0;
-}
-
-/* Compact project entries with title and technologies sharing a row. */
-.project-card {
-  padding: 0.9rem 1rem;
-}
-
-.project-heading {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.2rem 0.75rem;
-  margin-bottom: 0.35rem;
-}
-
-.project-heading h3,
-.project-heading .stack {
-  margin: 0;
-}
-
-.project-card p {
-  margin: 0;
-}
-
-.project-card .button {
-  padding: 0.45rem 0.8rem;
-}
-
-/* Keep section headings visible below the sticky navigation. */
-main section[id] {
-  scroll-margin-top: var(--nav-scroll-offset, 4rem);
+@media (min-width: 901px) {
+  .hero {
+    grid-template-columns: 1.3fr 1fr;
+  }
 }
