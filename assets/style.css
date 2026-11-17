@@ -499,6 +499,6 @@ main section[id] {
 
 @media (min-width: 901px) {
   .hero {
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.75fr 1fr;
   }
 }
