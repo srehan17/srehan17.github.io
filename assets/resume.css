@@ -902,3 +902,13 @@ li {
 .header-contact > span {
   gap: 3px;
 }
+
+.coursework {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+@media print {
+  .coursework { font-size: 10pt; }
+}
